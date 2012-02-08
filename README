@@ -1,0 +1,5 @@
+This repository includes a JSON Schema document and validation tools for
+checking JSON sent between NCS Navigator Field[0] and NCS Navigator Core[1].
+
+[0]: https://github.com/NUBIC/ncs_navigator_field
+[1]: Not yet public.
