@@ -1,3 +1,6 @@
 [submodule "vendor/json-schema"]
 	path = vendor/json-schema
 	url = https://github.com/kriszyp/json-schema.git
+[submodule "vendor/JSV"]
+	path = vendor/JSV
+	url = https://github.com/garycourt/JSV.git

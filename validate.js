@@ -1,5 +1,6 @@
-var validate = require('vendor/json-schema'),
+var JSV = require('vendor/jsv').JSV,
     fs = require('fs'),
+    env = JSV.createEnvironment(),
     schemaFile = process.argv[2],
     incomingJSON = "";
 
@@ -13,9 +14,9 @@ process.stdin.on('end', function (chunk) {
   fs.readFile(schemaFile, function (err, data) {
     var schema = JSON.parse(data),
         instance = JSON.parse(incomingJSON),
-        result = validate(instance, schema);
+        result = env.validate(instance, schema);
 
-    console.info('Valid:', result.valid);
+    console.info('Valid:', result.errors.length === 0);
     console.info('Errors:', result.errors);
   });
 });
