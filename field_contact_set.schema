@@ -1,0 +1,120 @@
+{
+    "name": "Field contact set",
+    "properties": {
+        "contacts": {
+            "description": "Contacts in the contact set",
+            "items": {
+                "name": "Contact",
+                "properties": {
+                    "end_date": {
+                        "description": "TODO",
+                        "format": "date-time",
+                        "required": true,
+                        "type": "string"
+                    },
+                    "events": {
+                        "items": {
+                            "properties": {
+                                "instruments": {
+                                    "items": {
+                                        "properties": {
+                                            "instrument_template_id": {
+                                                "required": true,
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "required": true,
+                                                "type": "string"
+                                            },
+                                            "response_set": {
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "minItems": 1,
+                                    "required": true,
+                                    "type": "array"
+                                },
+                                "name": {
+                                    "required": true,
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "minItems": 1,
+                        "required": true,
+                        "type": "array"
+                    },
+                    "location": {
+                        "properties": {
+                            "address": {
+                                "properties": {
+                                    "city": {
+                                        "type": "string"
+                                    },
+                                    "state": {
+                                        "type": "string"
+                                    },
+                                    "street": {
+                                        "type": "string"
+                                    },
+                                    "zip_code": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": true,
+                                "type": "object"
+                            },
+                            "code": {
+                                "required": true,
+                                "type": "string"
+                            },
+                            "details": {
+                                "type": "string"
+                            },
+                            "other": {
+                                "type": "string"
+                            }
+                        },
+                        "required": true,
+                        "type": "object"
+                    },
+                    "person": {
+                        "properties": {
+                            "cell_phone": {
+                                "format": "phone",
+                                "type": "string"
+                            },
+                            "email": {
+                                "type": "string"
+                            },
+                            "home_phone": {
+                                "format": "phone",
+                                "type": "string"
+                            },
+                            "name": {
+                                "required": true,
+                                "type": "string"
+                            }
+                        },
+                        "required": true,
+                        "type": "object"
+                    },
+                    "start_date": {
+                        "description": "TODO",
+                        "format": "date-time",
+                        "required": true,
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "TODO",
+                        "required": true,
+                        "type": "string"
+                    }
+                }
+            },
+            "required": true,
+            "type": "array"
+        }
+    }
+}
