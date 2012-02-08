@@ -14,10 +14,13 @@ process.stdin.on('end', function (chunk) {
   fs.readFile(schemaFile, function (err, data) {
     var schema = JSON.parse(data),
         instance = JSON.parse(incomingJSON),
-        result = env.validate(instance, schema);
+        result = env.validate(instance, schema),
+        valid = result.errors.length === 0;
 
-    console.info('Valid:', result.errors.length === 0);
+    console.info('Valid:', valid);
     console.info('Errors:', result.errors);
+
+    process.exit(valid ? 0 : 1);
   });
 });
 
