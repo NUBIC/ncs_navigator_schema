@@ -1,5 +1,6 @@
 {
     "name": "Field contact set",
+    "$schema": "http://json-schema.org/draft-03/schema#",
     "properties": {
         "contacts": {
             "description": "Contacts in the contact set",
