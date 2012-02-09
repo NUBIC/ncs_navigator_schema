@@ -89,7 +89,7 @@
                             },
                             "code": {
                                 "required": true,
-                                "type": "string"
+                                "type": "integer"
                             },
                             "details": {
                                 "type": "string"
@@ -111,7 +111,7 @@
                     },
                     "type": {
                         "required": true,
-                        "type": "string"
+                        "type": "integer"
                     }
                 }
             },
