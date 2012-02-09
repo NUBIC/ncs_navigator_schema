@@ -5,13 +5,11 @@
         "contacts": {
             "description": "Contacts in the contact set",
             "items": {
-                "name": "Contact",
                 "properties": {
                     "contact_id": {
                         "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
                     },
                     "end_date": {
-                        "description": "TODO",
                         "format": "date-time",
                         "required": true,
                         "type": "string"
@@ -116,13 +114,11 @@
                         "type": "object"
                     },
                     "start_date": {
-                        "description": "TODO",
                         "format": "date-time",
                         "required": true,
                         "type": "string"
                     },
                     "type": {
-                        "description": "TODO",
                         "required": true,
                         "type": "string"
                     }
