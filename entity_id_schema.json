@@ -1,0 +1,7 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema#",
+    "description": "Public IDs for NCS Navigator Core entities",
+    "maxLength": 36,
+    "required": true,
+    "type": "string"
+}

@@ -2,7 +2,18 @@ var JSV = require('vendor/jsv').JSV,
     fs = require('fs'),
     env = JSV.createEnvironment(),
     schemaFile = process.argv[2],
+    schemaBase = 'http://download.nubic.northwestern.edu/ncs_navigator',
     incomingJSON = "";
+
+// Hook up related schemata.
+fs.readFile('entity_id_schema.json', function (err, data) {
+  if (!data) {
+    console.error('Unable to read entity ID schema');
+    process.exit(1);
+  }
+
+  env.createSchema(JSON.parse(data), undefined, schemaBase + '/entity_id_schema.json#');
+});
 
 process.stdin.resume();
 

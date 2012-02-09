@@ -6,6 +6,9 @@
             "items": {
                 "name": "Contact",
                 "properties": {
+                    "contact_id": {
+                        "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
+                    },
                     "end_date": {
                         "description": "TODO",
                         "format": "date-time",
@@ -15,20 +18,17 @@
                     "events": {
                         "items": {
                             "properties": {
-                                "id": {
-                                    "required": true,
-                                    "type": "integer"
+                                "event_id": {
+                                    "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
                                 },
                                 "instruments": {
                                     "items": {
                                         "properties": {
-                                            "id": {
-                                                "required": true,
-                                                "type": "integer"
+                                            "instrument_id": {
+                                                "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
                                             },
                                             "instrument_template_id": {
-                                                "required": true,
-                                                "type": "string"
+                                                "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
                                             },
                                             "name": {
                                                 "required": true,
@@ -53,20 +53,15 @@
                         "required": true,
                         "type": "array"
                     },
-                    "id": {
-                        "required": true,
-                        "type": "integer"
-                    },
                     "location": {
                         "properties": {
                             "address": {
                                 "properties": {
+                                    "address_id": {
+                                        "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
+                                    },
                                     "city": {
                                         "type": "string"
-                                    },
-                                    "id": {
-                                        "required": true,
-                                        "type": "integer"
                                     },
                                     "state": {
                                         "type": "string"
@@ -88,10 +83,6 @@
                             "details": {
                                 "type": "string"
                             },
-                            "id": {
-                                "required": true,
-                                "type": "integer"
-                            },
                             "other": {
                                 "type": "string"
                             }
@@ -112,13 +103,12 @@
                                 "format": "phone",
                                 "type": "string"
                             },
-                            "id": {
-                                "required": true,
-                                "type": "integer"
-                            },
                             "name": {
                                 "required": true,
                                 "type": "string"
+                            },
+                            "person_id": {
+                                "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
                             }
                         },
                         "required": true,
