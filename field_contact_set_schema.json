@@ -15,9 +15,17 @@
                     "events": {
                         "items": {
                             "properties": {
+                                "id": {
+                                    "required": true,
+                                    "type": "integer"
+                                },
                                 "instruments": {
                                     "items": {
                                         "properties": {
+                                            "id": {
+                                                "required": true,
+                                                "type": "integer"
+                                            },
                                             "instrument_template_id": {
                                                 "required": true,
                                                 "type": "string"
@@ -45,12 +53,20 @@
                         "required": true,
                         "type": "array"
                     },
+                    "id": {
+                        "required": true,
+                        "type": "integer"
+                    },
                     "location": {
                         "properties": {
                             "address": {
                                 "properties": {
                                     "city": {
                                         "type": "string"
+                                    },
+                                    "id": {
+                                        "required": true,
+                                        "type": "integer"
                                     },
                                     "state": {
                                         "type": "string"
@@ -72,6 +88,10 @@
                             "details": {
                                 "type": "string"
                             },
+                            "id": {
+                                "required": true,
+                                "type": "integer"
+                            },
                             "other": {
                                 "type": "string"
                             }
@@ -91,6 +111,10 @@
                             "home_phone": {
                                 "format": "phone",
                                 "type": "string"
+                            },
+                            "id": {
+                                "required": true,
+                                "type": "integer"
                             },
                             "name": {
                                 "required": true,
