@@ -40,7 +40,7 @@
                                                 "type": "string"
                                             },
                                             "response_set": {
-                                                "type": "object"
+                                                "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/response_set_schema.json#"
                                             }
                                         }
                                     },
