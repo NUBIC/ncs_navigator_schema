@@ -101,32 +101,8 @@
                         "required": true,
                         "type": "object"
                     },
-                    "person": {
-                        "extends": {
-                            "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
-                        },
-                        "properties": {
-                            "cell_phone": {
-                                "format": "phone",
-                                "type": "string"
-                            },
-                            "email": {
-                                "type": "string"
-                            },
-                            "home_phone": {
-                                "format": "phone",
-                                "type": "string"
-                            },
-                            "name": {
-                                "required": true,
-                                "type": "string"
-                            },
-                            "person_id": {
-                                "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
-                            }
-                        },
-                        "required": true,
-                        "type": "object"
+                    "person_id": {
+                        "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
                     },
                     "start_date": {
                         "format": "date-time",
@@ -157,6 +133,17 @@
                                 "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
                             },
                             "properties": {
+                                "cell_phone": {
+                                    "format": "phone",
+                                    "type": "string"
+                                },
+                                "email": {
+                                    "type": "string"
+                                },
+                                "home_phone": {
+                                    "format": "phone",
+                                    "type": "string"
+                                },
                                 "name": {
                                     "required": true,
                                     "type": "string"
@@ -179,4 +166,3 @@
             "type": "array"
         }
     }
-}
