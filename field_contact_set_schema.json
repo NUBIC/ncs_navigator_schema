@@ -126,6 +126,36 @@
             },
             "required": true,
             "type": "array"
+        },
+        "participants": {
+            "items": {
+                "properties": {
+                    "p_id": {
+                        "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
+                    },
+                    "persons": {
+                        "items": {
+                            "properties": {
+                                "name": {
+                                    "required": true,
+                                    "type": "string"
+                                },
+                                "person_id": {
+                                    "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
+                                },
+                                "relationship_code": {
+                                    "required": true,
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "required": true,
+                        "type": "array"
+                    }
+                }
+            },
+            "required": true,
+            "type": "array"
         }
     }
 }
