@@ -1,0 +1,10 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema#",
+    "properties": {
+        "version": {
+            "format": "date-time",
+            "required": true,
+            "type": "string"
+        }
+    }
+}

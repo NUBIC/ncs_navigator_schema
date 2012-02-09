@@ -5,6 +5,9 @@
         "contacts": {
             "description": "Contacts in the contact set",
             "items": {
+                "extends": {
+                    "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
+                },
                 "properties": {
                     "contact_id": {
                         "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
@@ -16,6 +19,9 @@
                     },
                     "events": {
                         "items": {
+                            "extends": {
+                                "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
+                            },
                             "properties": {
                                 "event_id": {
                                     "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
@@ -53,8 +59,14 @@
                         "type": "array"
                     },
                     "location": {
+                        "extends": {
+                            "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
+                        },
                         "properties": {
                             "address": {
+                                "extends": {
+                                    "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
+                                },
                                 "properties": {
                                     "address_id": {
                                         "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
@@ -90,6 +102,9 @@
                         "type": "object"
                     },
                     "person": {
+                        "extends": {
+                            "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
+                        },
                         "properties": {
                             "cell_phone": {
                                 "format": "phone",
@@ -129,12 +144,18 @@
         },
         "participants": {
             "items": {
+                "extends": {
+                    "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
+                },
                 "properties": {
                     "p_id": {
                         "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
                     },
                     "persons": {
                         "items": {
+                            "extends": {
+                                "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
+                            },
                             "properties": {
                                 "name": {
                                     "required": true,

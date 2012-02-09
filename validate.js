@@ -15,6 +15,15 @@ fs.readFile('entity_id_schema.json', function (err, data) {
   env.createSchema(JSON.parse(data), undefined, schemaBase + '/entity_id_schema.json#');
 });
 
+fs.readFile('versioned_entity_schema.json', function (err, data) {
+  if (!data) {
+    console.error('Unable to read versioned entity schema');
+    process.exit(1);
+  }
+
+  env.createSchema(JSON.parse(data), undefined, schemaBase + '/versioned_entity_schema.json#');
+});
+
 process.stdin.resume();
 
 process.stdin.on('data', function (chunk) {
