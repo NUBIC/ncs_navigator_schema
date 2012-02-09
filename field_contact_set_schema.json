@@ -153,7 +153,7 @@
                                 },
                                 "relationship_code": {
                                     "required": true,
-                                    "type": "string"
+                                    "type": "integer"
                                 }
                             }
                         },
