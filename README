@@ -6,8 +6,8 @@ against a schema, and should be usable in any CommonJS environment.  (However,
 so far, only NodeJS has been tested.)  To use, pass the JSON document on
 standard input and supply the schema to use as validate.js' first argument:
 
-    curl https://ncs.example.edu/field_contact_set/1 \
-        | node validate.js field_contact_set_schema.json
+    curl https://ncs.example.edu/fieldwork/1 \
+        | node validate.js fieldwork_schema.json
 
 
 [0]: https://github.com/NUBIC/ncs_navigator_field
