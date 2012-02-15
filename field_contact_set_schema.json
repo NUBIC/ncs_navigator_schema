@@ -15,7 +15,10 @@
                     "end_date": {
                         "format": "date-time",
                         "required": true,
-                        "type": "string"
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     },
                     "events": {
                         "items": {
