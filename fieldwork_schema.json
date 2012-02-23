@@ -61,49 +61,6 @@
                         "required": true,
                         "type": "array"
                     },
-                    "location": {
-                        "extends": {
-                            "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
-                        },
-                        "properties": {
-                            "address": {
-                                "extends": {
-                                    "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
-                                },
-                                "properties": {
-                                    "address_id": {
-                                        "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
-                                    },
-                                    "city": {
-                                        "type": "string"
-                                    },
-                                    "state": {
-                                        "type": "string"
-                                    },
-                                    "street": {
-                                        "type": "string"
-                                    },
-                                    "zip_code": {
-                                        "type": "string"
-                                    }
-                                },
-                                "required": true,
-                                "type": "object"
-                            },
-                            "code": {
-                                "required": true,
-                                "type": "integer"
-                            },
-                            "details": {
-                                "type": "string"
-                            },
-                            "other": {
-                                "type": "string"
-                            }
-                        },
-                        "required": true,
-                        "type": "object"
-                    },
                     "person_id": {
                         "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
                     },
@@ -140,6 +97,9 @@
                                     "format": "phone",
                                     "type": "string"
                                 },
+                                "city": {
+                                    "type": "string"
+                                },
                                 "email": {
                                     "type": "string"
                                 },
@@ -157,6 +117,15 @@
                                 "relationship_code": {
                                     "required": true,
                                     "type": "integer"
+                                },
+                                "state": {
+                                    "type": "string"
+                                },
+                                "street": {
+                                    "type": "string"
+                                },
+                                "zip_code": {
+                                    "type": "string"
                                 }
                             }
                         },
