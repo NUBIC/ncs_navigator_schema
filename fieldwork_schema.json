@@ -9,11 +9,18 @@
                     "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
                 },
                 "properties": {
+                    "contact_date": {
+                        "format": "date",
+                        "required": true,
+                        "type": [
+                            "string"
+                        ]
+                    },
                     "contact_id": {
                         "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
                     },
-                    "end_date": {
-                        "format": "date-time",
+                    "end_time": {
+                        "format": "time",
                         "required": true,
                         "type": [
                             "string",
@@ -64,10 +71,13 @@
                     "person_id": {
                         "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
                     },
-                    "start_date": {
-                        "format": "date-time",
+                    "start_time": {
+                        "format": "time",
                         "required": true,
-                        "type": "string"
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     },
                     "type": {
                         "required": true,
