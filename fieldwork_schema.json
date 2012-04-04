@@ -54,7 +54,7 @@
                                             }
                                         }
                                     },
-                                    "minItems": 1,
+                                    "minItems": 0,
                                     "required": true,
                                     "type": "array"
                                 },
@@ -64,7 +64,7 @@
                                 }
                             }
                         },
-                        "minItems": 1,
+                        "minItems": 0,
                         "required": true,
                         "type": "array"
                     },
