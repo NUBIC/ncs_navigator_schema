@@ -60,6 +60,22 @@
                                 "name": {
                                     "required": true,
                                     "type": "string"
+                                },
+                                "start_date": {
+                                    "required": false,
+                                    "type": "date"
+                                },
+                                "end_date": {
+                                    "required": false,
+                                    "type": "date"
+                                },
+                                "start_time": {
+                                    "required": false,
+                                    "type": "string"
+                                },
+                                "end_time": {
+                                    "required": false,
+                                    "type": "string"
                                 }
                             }
                         },
@@ -184,6 +200,7 @@
                     }
                 }
             },
+            "minItems": 0,
             "required": true,
             "type": "array"
         }
