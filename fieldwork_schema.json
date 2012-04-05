@@ -62,19 +62,15 @@
                                     "type": "string"
                                 },
                                 "start_date": {
-                                    "required": false,
                                     "type": "date"
                                 },
                                 "end_date": {
-                                    "required": false,
                                     "type": "date"
                                 },
                                 "start_time": {
-                                    "required": false,
                                     "type": "string"
                                 },
                                 "end_time": {
-                                    "required": false,
                                     "type": "string"
                                 }
                             }
@@ -194,9 +190,9 @@
                     "instrument_template_id": {
                         "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
                     },
-                    "representation": {
+                    "survey": {
                         "required": true,
-                        "type": "string"
+                        "type": "object"
                     }
                 }
             },
