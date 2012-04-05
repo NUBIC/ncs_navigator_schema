@@ -19,6 +19,13 @@
                     "contact_id": {
                         "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
                     },
+                    "disposition": {
+                        "required": true,
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
                     "end_time": {
                         "required": true,
                         "type": [
@@ -32,6 +39,17 @@
                                 "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
                             },
                             "properties": {
+                                "disposition": {
+                                    "required": true,
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ]
+                                },
+                                "disposition_category": {
+                                    "required": true,
+                                    "type": "integer"
+                                },
                                 "end_date": {
                                     "format": "date",
                                     "type": [
