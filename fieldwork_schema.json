@@ -33,10 +33,17 @@
                             },
                             "properties": {
                                 "end_date": {
-                                    "type": "date"
+                                    "format": "date",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 },
                                 "end_time": {
-                                    "type": "string"
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 },
                                 "event_id": {
                                     "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
@@ -68,10 +75,17 @@
                                     "type": "string"
                                 },
                                 "start_date": {
-                                    "type": "date"
+                                    "format": "date",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 },
                                 "start_time": {
-                                    "type": "string"
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 }
                             }
                         },
