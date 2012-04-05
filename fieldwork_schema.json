@@ -168,6 +168,24 @@
             },
             "required": true,
             "type": "array"
+        },
+        "instrument_templates": {
+            "items": {
+                "extends": {
+                    "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
+                },
+                "properties": {
+                    "instrument_template_id": {
+                        "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
+                    },
+                    "representation": {
+                        "required": true,
+                        "type": "string"
+                    }
+                }
+            },
+            "required": true,
+            "type": "array"
         }
     }
 }
