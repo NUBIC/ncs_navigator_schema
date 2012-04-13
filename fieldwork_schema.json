@@ -130,6 +130,18 @@
                                 "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
                             },
                             "properties": {
+                                "break_off": {
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ]
+                                },
+                                "comments": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
                                 "disposition": {
                                     "required": true,
                                     "type": [
@@ -149,6 +161,18 @@
                                     ]
                                 },
                                 "end_time": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "incentive": {
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ]
+                                },
+                                "incentive_cash": {
                                     "type": [
                                         "string",
                                         "null"
@@ -183,6 +207,12 @@
                                     "required": true,
                                     "type": "string"
                                 },
+                                "repeat_key": {
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ]
+                                },
                                 "start_date": {
                                     "format": "date",
                                     "type": [
@@ -191,6 +221,18 @@
                                     ]
                                 },
                                 "start_time": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "type": {
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ]
+                                },
+                                "type_other": {
                                     "type": [
                                         "string",
                                         "null"
