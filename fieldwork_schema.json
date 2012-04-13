@@ -9,6 +9,12 @@
                     "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
                 },
                 "properties": {
+                    "comments": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
                     "contact_date": {
                         "format": "date",
                         "required": true,
@@ -26,8 +32,7 @@
                             "null"
                         ]
                     },
-                    "start_time": {
-                        "required": true,
+                    "distance_traveled": {
                         "type": [
                             "string",
                             "null"
@@ -35,90 +40,6 @@
                     },
                     "end_time": {
                         "required": true,
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "type": {
-                        "type": [
-                            "integer",
-                            "null"
-                        ]
-                    },
-                    "person_id": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "location": {
-                        "type": [
-                            "integer",
-                            "null"
-                        ]
-                    },
-                    "location_other": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "who_contacted": {
-                        "type": [
-                            "integer",
-                            "null"
-                        ]
-                    },
-                    "who_contacted_other": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "comments": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "language": {
-                        "type": [
-                            "integer",
-                            "null"
-                        ]
-                    },
-                    "language_other": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "interpreter": {
-                        "type": [
-                            "integer",
-                            "null"
-                        ]
-                    },
-                    "interpreter_other": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "private": {
-                        "type": [
-                            "integer",
-                            "null"
-                        ]
-                    },
-                    "private_detail": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "distance_traveled": {
                         "type": [
                             "string",
                             "null"
@@ -244,8 +165,56 @@
                         "required": true,
                         "type": "array"
                     },
+                    "interpreter": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "interpreter_other": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "language": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "language_other": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "location": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "location_other": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
                     "person_id": {
                         "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
+                    },
+                    "private": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "private_detail": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     },
                     "start_time": {
                         "required": true,
@@ -257,6 +226,18 @@
                     "type": {
                         "required": true,
                         "type": "integer"
+                    },
+                    "who_contacted": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "who_contacted_other": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     }
                 }
             },
