@@ -26,8 +26,99 @@
                             "null"
                         ]
                     },
+                    "start_time": {
+                        "required": true,
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
                     "end_time": {
                         "required": true,
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "type": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "person_id": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "location": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "location_other": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "who_contacted": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "who_contacted_other": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "comments": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "language": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "language_other": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "interpreter": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "interpreter_other": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "private": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "private_detail": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "distance_traveled": {
                         "type": [
                             "string",
                             "null"
