@@ -3,7 +3,7 @@
     "description": "Response set",
     "properties": {
         "api_id": {
-            "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
+            "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/api_id_schema.json"
         },
         "completed_at": {
             "format": "date-time",
@@ -16,35 +16,37 @@
         "responses": {
             "description": "Responses in the response set",
             "items": {
-                "answer_id": {
-                    "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
-                },
-                "api_id": {
-                    "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
-                },
-                "created_at": {
-                    "format": "date-time",
-                    "type": "string"
-                },
-                "question_id": {
-                    "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
-                },
-                "updated_at": {
-                    "format": "date-time",
-                    "type": "string"
-                },
-                "value": {
-                    "type": [
-                        "string",
-                        "number",
-                        "null"
-                    ]
+                "properties": {
+                    "answer_id": {
+                        "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/api_id_schema.json"
+                    },
+                    "api_id": {
+                        "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/api_id_schema.json"
+                    },
+                    "created_at": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "question_id": {
+                        "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/api_id_schema.json"
+                    },
+                    "updated_at": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": [
+                            "string",
+                            "number",
+                            "null"
+                        ]
+                    }
                 }
             },
             "type": "array"
         },
         "survey_id": {
-            "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
+            "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/api_id_schema.json"
         }
     }
 }
