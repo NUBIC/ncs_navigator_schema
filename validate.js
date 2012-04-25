@@ -5,8 +5,8 @@ var JSV = require('vendor/jsv').JSV,
     incomingJSON = "",
     relatedSchemata = [
       'http://download.nubic.northwestern.edu/surveyor/api_id_schema.json',
+      'http://download.nubic.northwestern.edu/surveyor/response_set_schema.json',
       'http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json',
-      'http://download.nubic.northwestern.edu/ncs_navigator/response_set_schema.json',
       'http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json'
     ];
 

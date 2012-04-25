@@ -171,7 +171,7 @@
                                                 "type": "string"
                                             },
                                             "response_set": {
-                                                "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/response_set_schema.json#"
+                                                "$ref": "http://download.nubic.northwestern.edu/surveyor/response_set_schema.json#"
                                             },
                                             "start_date": {
                                                 "format": "date",
