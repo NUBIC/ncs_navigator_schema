@@ -2,23 +2,25 @@ var JSV = require('vendor/jsv').JSV,
     fs = require('fs'),
     env = JSV.createEnvironment(),
     schemaFile = process.argv[2],
-    schemaBase = 'http://download.nubic.northwestern.edu/ncs_navigator',
     incomingJSON = "",
     relatedSchemata = [
-      'entity_id_schema.json',
-      'response_set_schema.json',
-      'versioned_entity_schema.json'
+      'http://download.nubic.northwestern.edu/surveyor/api_id_schema.json',
+      'http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json',
+      'http://download.nubic.northwestern.edu/ncs_navigator/response_set_schema.json',
+      'http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json'
     ];
 
 // Hook up related schemata.
 relatedSchemata.forEach(function (schema) {
-  fs.readFile(schema, function (err, data) {
+  var file = schema.split('/').reverse()[0]
+
+  fs.readFile(file, function (err, data) {
     if (!data) {
       console.error('Unable to read', schema);
       process.exit(1);
     }
 
-    env.createSchema(JSON.parse(data), undefined, schemaBase + '/' + schema + '#');
+    env.createSchema(JSON.parse(data), undefined, schema + '#');
   });
 });
 
