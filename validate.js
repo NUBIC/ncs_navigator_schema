@@ -12,7 +12,7 @@ var JSV = require('vendor/jsv').JSV,
 
 // Hook up related schemata.
 relatedSchemata.forEach(function (schema) {
-  var file = schema.split('/').reverse()[0]
+  var file = schema.split('/').reverse()[0];
 
   fs.readFile(file, function (err, data) {
     if (!data) {
