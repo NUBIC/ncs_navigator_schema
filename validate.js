@@ -1,27 +1,38 @@
-var JSV = require('vendor/jsv').JSV,
+var JSV = require('vendor/JSV').JSV,
     fs = require('fs'),
     env = JSV.createEnvironment(),
     schemaFile = process.argv[2],
-    incomingJSON = "",
-    relatedSchemata = [
-      'http://download.nubic.northwestern.edu/surveyor/api_id_schema.json',
-      'http://download.nubic.northwestern.edu/surveyor/response_set_schema.json',
-      'http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json',
-      'http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json'
-    ];
+    incomingJSON = "";
 
-// Hook up related schemata.
-relatedSchemata.forEach(function (schema) {
-  var file = schema.split('/').reverse()[0];
+// Hook up refs.
+fs.readFile('refs.json', function (err, data) {
+  var refs, r;
 
-  fs.readFile(file, function (err, data) {
-    if (!data) {
-      console.error('Unable to read', schema);
-      process.exit(1);
+  if (!data) {
+    console.error('Unable to read referenced schema map (error:', err, ')');
+    process.exit(1);
+  }
+
+  refs = JSON.parse(data);
+
+  for (r in refs) {
+    if (refs.hasOwnProperty(r)) {
+      (function () {
+        var ref = r, fn;
+
+        fn = refs[ref];
+
+        fs.readFile(fn, function (err, data) {
+          if (!data) {
+            console.error('Unable to read', fn, '(error:', err, ')');
+            process.exit(1);
+          }
+
+          env.createSchema(JSON.parse(data), undefined, ref);
+        });
+      })();
     }
-
-    env.createSchema(JSON.parse(data), undefined, schema + '#');
-  });
+  }
 });
 
 process.stdin.resume();
