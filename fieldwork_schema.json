@@ -1,10 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-03/schema#",
+    "additionalProperties": false,
     "description": "Field contact set",
     "properties": {
         "contacts": {
             "description": "Contacts in the contact set",
             "items": {
+                "additionalProperties": false,
                 "extends": {
                     "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
                 },
@@ -47,6 +49,7 @@
                     },
                     "events": {
                         "items": {
+                            "additionalProperties": false,
                             "extends": {
                                 "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
                             },
@@ -104,6 +107,7 @@
                                 },
                                 "instruments": {
                                     "items": {
+                                        "additionalProperties": false,
                                         "properties": {
                                             "breakoff": {
                                                 "type": [
