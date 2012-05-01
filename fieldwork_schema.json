@@ -260,7 +260,8 @@
                                         "string",
                                         "null"
                                     ]
-                                }
+                                },
+                                "version": {}
                             }
                         },
                         "minItems": 0,
@@ -329,6 +330,7 @@
                         "required": true,
                         "type": "integer"
                     },
+                    "version": {},
                     "who_contacted": {
                         "type": [
                             "integer",
