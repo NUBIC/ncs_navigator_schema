@@ -1,0 +1,5 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema#",
+    "description": "Format for decimal numbers represented as strings",
+    "pattern": "(?:\\d+$|\\d+.\\d+$)"
+}

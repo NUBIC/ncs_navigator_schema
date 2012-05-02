@@ -1,4 +1,5 @@
 {
+    "http://download.nubic.northwestern.edu/ncs_navigator/decimal_as_string.json#": "decimal_as_string.json",
     "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#": "entity_id_schema.json",
     "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#": "versioned_entity_schema.json",
     "http://download.nubic.northwestern.edu/surveyor/api_id_schema.json#": "api_id_schema.json",
