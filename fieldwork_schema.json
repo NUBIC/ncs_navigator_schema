@@ -115,7 +115,7 @@
                                     "items": {
                                         "additionalProperties": false,
                                         "properties": {
-                                            "breakoff": {
+                                            "break_off": {
                                                 "type": [
                                                     "integer",
                                                     "null"
