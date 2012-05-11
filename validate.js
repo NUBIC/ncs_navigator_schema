@@ -2,38 +2,33 @@ var JSV = require('vendor/JSV').JSV,
     fs = require('fs'),
     env = JSV.createEnvironment(),
     schemaFile = process.argv[2],
-    incomingJSON = "";
-
+    incomingJSON = "",
+    data,
+    refs, ref, fn;
+    
 // Hook up refs.
-fs.readFile('refs.json', function (err, data) {
-  var refs, r;
+data = fs.readFileSync('refs.json');
 
-  if (!data) {
-    console.error('Unable to read referenced schema map (error:', err, ')');
-    process.exit(1);
-  }
+if (!data) {
+  console.error('Unable to read referenced schema map (error:', err, ')');
+  process.exit(1);
+}
 
-  refs = JSON.parse(data);
+refs = JSON.parse(data);
 
-  for (r in refs) {
-    if (refs.hasOwnProperty(r)) {
-      (function () {
-        var ref = r, fn;
-
-        fn = refs[ref];
-
-        fs.readFile(fn, function (err, data) {
-          if (!data) {
-            console.error('Unable to read', fn, '(error:', err, ')');
-            process.exit(1);
-          }
-
-          env.createSchema(JSON.parse(data), undefined, ref);
-        });
-      })();
+for (ref in refs) {
+  if (refs.hasOwnProperty(ref)) {
+    fn = refs[ref];
+    data = fs.readFileSync(fn);
+    
+    if (!data) {
+      console.error('Unable to read', fn, '(error:', err, ')');
+      process.exit(1);      
     }
+    
+    env.createSchema(JSON.parse(data), undefined, ref);
   }
-});
+}
 
 process.stdin.resume();
 
