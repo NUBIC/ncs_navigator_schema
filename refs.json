@@ -1,7 +1,28 @@
 {
-    "http://download.nubic.northwestern.edu/ncs_navigator/decimal_as_string.json#": "decimal_as_string.json",
-    "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#": "entity_id_schema.json",
-    "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#": "versioned_entity_schema.json",
-    "http://download.nubic.northwestern.edu/surveyor/api_id_schema.json#": "api_id_schema.json",
-    "http://download.nubic.northwestern.edu/surveyor/response_set_schema.json#": "response_set_schema.json"
+    "refs": [
+        {
+            "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/decimal_as_string.json#",
+            "fn": "decimal_as_string.json"
+        },
+        {
+            "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#",
+            "fn": "entity_id_schema.json"
+        },
+        {
+            "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#",
+            "fn": "versioned_entity_schema.json"
+        },
+        {
+            "$ref": "http://download.nubic.northwestern.edu/surveyor/api_id_schema.json#",
+            "fn": "api_id_schema.json"
+        },
+        {
+            "$ref": "http://download.nubic.northwestern.edu/surveyor/surveyor_timestamp_schema.json#",
+            "fn": "surveyor_timestamp_schema.json"
+        },
+        {
+            "$ref": "http://download.nubic.northwestern.edu/surveyor/response_set_schema.json#",
+            "fn": "response_set_schema.json"
+        }
+    ]
 }

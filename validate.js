@@ -4,8 +4,8 @@ var JSV = require('vendor/JSV').JSV,
     schemaFile = process.argv[2],
     incomingJSON = "",
     data,
-    refs, ref, fn;
-    
+    refs, ref, fn, i;
+
 // Hook up refs.
 data = fs.readFileSync('refs.json');
 
@@ -16,18 +16,18 @@ if (!data) {
 
 refs = JSON.parse(data);
 
-for (ref in refs) {
-  if (refs.hasOwnProperty(ref)) {
-    fn = refs[ref];
-    data = fs.readFileSync(fn);
-    
-    if (!data) {
-      console.error('Unable to read', fn, '(error:', err, ')');
-      process.exit(1);      
-    }
-    
-    env.createSchema(JSON.parse(data), undefined, ref);
+for (i = 0; i < refs.length; ++i) {
+  ref = refs[i]['$ref'];
+  fn = refs[i]['fn'];
+
+  data = fs.readFileSync(fn);
+
+  if (!data) {
+    console.error('Unable to read', fn, '(error:', err, ')');
+    process.exit(1);
   }
+
+  env.createSchema(JSON.parse(data), undefined, ref);
 }
 
 process.stdin.resume();
