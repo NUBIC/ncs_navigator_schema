@@ -11,7 +11,7 @@
                     "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
                 },
                 "properties": {
-                    "comments": {
+                    "contact_comment": {
                         "type": [
                             "string",
                             "null"
@@ -27,14 +27,14 @@
                     "contact_id": {
                         "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
                     },
-                    "disposition": {
+                    "contact_disposition": {
                         "required": true,
                         "type": [
                             "integer",
                             "null"
                         ]
                     },
-                    "distance_traveled": {
+                    "contact_distance": {
                         "extends": {
                             "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/decimal_as_string.json#"
                         },
@@ -43,7 +43,7 @@
                             "null"
                         ]
                     },
-                    "end_time": {
+                    "contact_end_time": {
                         "required": true,
                         "type": [
                             "string",
@@ -57,37 +57,37 @@
                                 "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
                             },
                             "properties": {
-                                "break_off": {
+                                "event_breakoff_code": {
                                     "type": [
                                         "integer",
                                         "null"
                                     ]
                                 },
-                                "comments": {
+                                "event_comment": {
                                     "type": [
                                         "string",
                                         "null"
                                     ]
                                 },
-                                "disposition": {
+                                "event_disposition": {
                                     "required": true,
                                     "type": [
                                         "integer",
                                         "null"
                                     ]
                                 },
-                                "disposition_category": {
+                                "event_disposition_category_code": {
                                     "required": true,
                                     "type": "integer"
                                 },
-                                "end_date": {
+                                "event_end_date": {
                                     "format": "date",
                                     "type": [
                                         "string",
                                         "null"
                                     ]
                                 },
-                                "end_time": {
+                                "event_end_time": {
                                     "type": [
                                         "string",
                                         "null"
@@ -96,7 +96,7 @@
                                 "event_id": {
                                     "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
                                 },
-                                "incentive_cash": {
+                                "event_incentive_cash": {
                                     "extends": {
                                         "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/decimal_as_string.json#"
                                     },
@@ -105,7 +105,7 @@
                                         "null"
                                     ]
                                 },
-                                "incentive_type": {
+                                "event_incentive_type_code": {
                                     "type": [
                                         "integer",
                                         "null"
@@ -115,32 +115,32 @@
                                     "items": {
                                         "additionalProperties": false,
                                         "properties": {
-                                            "break_off": {
+                                            "instrument_breakoff_code": {
                                                 "type": [
                                                     "integer",
                                                     "null"
                                                 ]
                                             },
-                                            "comments": {
+                                            "instrument_comment": {
                                                 "type": [
                                                     "string",
                                                     "null"
                                                 ]
                                             },
-                                            "data_problem": {
+                                            "data_problem_code": {
                                                 "type": [
                                                     "integer",
                                                     "null"
                                                 ]
                                             },
-                                            "end_date": {
+                                            "instrument_end_date": {
                                                 "format": "date",
                                                 "type": [
                                                     "string",
                                                     "null"
                                                 ]
                                             },
-                                            "end_time": {
+                                            "instrument_end_time": {
                                                 "type": [
                                                     "string",
                                                     "null"
@@ -158,19 +158,19 @@
                                                     "null"
                                                 ]
                                             },
-                                            "method_administered": {
+                                            "instrument_method_code": {
                                                 "type": [
                                                     "integer",
                                                     "null"
                                                 ]
                                             },
-                                            "mode_administered": {
+                                            "instrument_mode_code": {
                                                 "type": [
                                                     "integer",
                                                     "null"
                                                 ]
                                             },
-                                            "mode_administered_other": {
+                                            "instrument_mode_other": {
                                                 "type": [
                                                     "string",
                                                     "null"
@@ -180,7 +180,7 @@
                                                 "required": true,
                                                 "type": "string"
                                             },
-                                            "repeat_key": {
+                                            "instrument_repeat_key": {
                                                 "type": [
                                                     "integer",
                                                     "null"
@@ -189,38 +189,38 @@
                                             "response_set": {
                                                 "$ref": "http://download.nubic.northwestern.edu/surveyor/response_set_schema.json#"
                                             },
-                                            "start_date": {
+                                            "instrument_start_date": {
                                                 "format": "date",
                                                 "type": [
                                                     "string",
                                                     "null"
                                                 ]
                                             },
-                                            "start_time": {
+                                            "instrument_start_time": {
                                                 "type": [
                                                     "string",
                                                     "null"
                                                 ]
                                             },
-                                            "status": {
+                                            "instrument_status_code": {
                                                 "type": [
                                                     "integer",
                                                     "null"
                                                 ]
                                             },
-                                            "supervisor_review": {
+                                            "supervisor_review_code": {
                                                 "type": [
                                                     "integer",
                                                     "null"
                                                 ]
                                             },
-                                            "type": {
+                                            "instrument_type_code": {
                                                 "type": [
                                                     "integer",
                                                     "null"
                                                 ]
                                             },
-                                            "type_other": {
+                                            "instrument_type_other": {
                                                 "type": [
                                                     "string",
                                                     "null"
@@ -236,32 +236,32 @@
                                     "required": true,
                                     "type": "string"
                                 },
-                                "repeat_key": {
+                                "event_repeat_key": {
                                     "type": [
                                         "integer",
                                         "null"
                                     ]
                                 },
-                                "start_date": {
+                                "event_start_date": {
                                     "format": "date",
                                     "type": [
                                         "string",
                                         "null"
                                     ]
                                 },
-                                "start_time": {
+                                "event_start_time": {
                                     "type": [
                                         "string",
                                         "null"
                                     ]
                                 },
-                                "type": {
+                                "event_type_code": {
                                     "type": [
                                         "integer",
                                         "null"
                                     ]
                                 },
-                                "type_other": {
+                                "event_type_other": {
                                     "type": [
                                         "string",
                                         "null"
@@ -274,37 +274,37 @@
                         "required": true,
                         "type": "array"
                     },
-                    "interpreter": {
+                    "contact_interpret_code": {
                         "type": [
                             "integer",
                             "null"
                         ]
                     },
-                    "interpreter_other": {
+                    "contact_interpret_other": {
                         "type": [
                             "string",
                             "null"
                         ]
                     },
-                    "language": {
+                    "contact_language_code": {
                         "type": [
                             "integer",
                             "null"
                         ]
                     },
-                    "language_other": {
+                    "contact_language_other": {
                         "type": [
                             "string",
                             "null"
                         ]
                     },
-                    "location": {
+                    "contact_location_code": {
                         "type": [
                             "integer",
                             "null"
                         ]
                     },
-                    "location_other": {
+                    "contact_location_other": {
                         "type": [
                             "string",
                             "null"
@@ -313,31 +313,31 @@
                     "person_id": {
                         "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
                     },
-                    "private": {
+                    "contact_private_code": {
                         "type": [
                             "integer",
                             "null"
                         ]
                     },
-                    "private_detail": {
+                    "contact_private_detail": {
                         "type": [
                             "string",
                             "null"
                         ]
                     },
-                    "start_time": {
+                    "contact_start_time": {
                         "required": true,
                         "type": [
                             "string",
                             "null"
                         ]
                     },
-                    "type": {
+                    "contact_type_code": {
                         "required": true,
                         "type": "integer"
                     },
                     "version": {},
-                    "who_contacted": {
+                    "who_contacted_code": {
                         "type": [
                             "integer",
                             "null"
