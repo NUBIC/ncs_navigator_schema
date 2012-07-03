@@ -17,7 +17,7 @@
                             "null"
                         ]
                     },
-                    "contact_date": {
+                    "contact_date_date": {
                         "format": "date",
                         "required": true,
                         "type": [
