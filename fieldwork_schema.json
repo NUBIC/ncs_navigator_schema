@@ -25,7 +25,6 @@
                         ]
                     },
                     "contact_disposition": {
-                        "required": true,
                         "type": [
                             "integer",
                             "null"
@@ -41,7 +40,6 @@
                         ]
                     },
                     "contact_end_time": {
-                        "required": true,
                         "type": [
                             "string",
                             "null"
@@ -99,7 +97,6 @@
                         ]
                     },
                     "contact_start_time": {
-                        "required": true,
                         "type": [
                             "string",
                             "null"
@@ -129,7 +126,6 @@
                                     ]
                                 },
                                 "event_disposition": {
-                                    "required": true,
                                     "type": [
                                         "integer",
                                         "null"
