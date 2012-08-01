@@ -303,8 +303,13 @@
                                                 "required": true,
                                                 "type": "string"
                                             },
-                                            "response_set": {
-                                                "$ref": "http://download.nubic.northwestern.edu/surveyor/response_set_schema.json#"
+                                            "response_sets": {
+                                                "items": {
+                                                    "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/response_set_schema.json#"
+                                                },
+                                                "minItems": 0,
+                                                "required": true,
+                                                "type": "array"
                                             },
                                             "supervisor_review_code": {
                                                 "type": [
