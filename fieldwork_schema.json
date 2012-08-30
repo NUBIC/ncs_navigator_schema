@@ -375,7 +375,8 @@
                                 "participant_type": {
                                     "enum": [
                                         "child",
-                                        "mother"
+                                        "mother",
+                                        "self"
                                     ],
                                     "required": true,
                                     "type": "string"
