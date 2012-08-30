@@ -253,6 +253,10 @@
                                                     "null"
                                                 ]
                                             },
+                                            "instrument_plan_id": {
+                                                "required": true,
+                                                "type": "string"
+                                            },
                                             "instrument_repeat_key": {
                                                 "type": [
                                                     "integer",
@@ -277,9 +281,6 @@
                                                     "integer",
                                                     "null"
                                                 ]
-                                            },
-                                            "instrument_template_id": {
-                                                "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
                                             },
                                             "instrument_type_code": {
                                                 "type": [
@@ -355,18 +356,40 @@
             "required": true,
             "type": "array"
         },
-        "instrument_templates": {
+        "instrument_plans": {
             "items": {
-                "extends": {
-                    "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
-                },
                 "properties": {
-                    "instrument_template_id": {
-                        "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
-                    },
-                    "survey": {
+                    "instrument_plan_id": {
                         "required": true,
-                        "type": "object"
+                        "type": "string"
+                    },
+                    "instrument_templates": {
+                        "items": {
+                            "extends": {
+                                "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/versioned_entity_schema.json#"
+                            },
+                            "properties": {
+                                "instrument_template_id": {
+                                    "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
+                                },
+                                "participant_type": {
+                                    "enum": [
+                                        "child",
+                                        "mother",
+                                        "self"
+                                    ],
+                                    "required": true,
+                                    "type": "string"
+                                },
+                                "survey": {
+                                    "required": true,
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "minItems": 0,
+                        "required": true,
+                        "type": "array"
                     }
                 }
             },
