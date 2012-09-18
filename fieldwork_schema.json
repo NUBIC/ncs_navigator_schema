@@ -379,7 +379,10 @@
                                         "self"
                                     ],
                                     "required": true,
-                                    "type": "string"
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 },
                                 "survey": {
                                     "required": true,
