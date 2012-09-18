@@ -376,7 +376,8 @@
                                     "enum": [
                                         "child",
                                         "mother",
-                                        "self"
+                                        "self",
+                                        null
                                     ],
                                     "required": true,
                                     "type": [
