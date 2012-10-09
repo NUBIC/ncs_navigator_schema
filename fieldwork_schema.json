@@ -435,6 +435,13 @@
                                         "null"
                                     ]
                                 },
+                                "first_name": {
+                                    "required": true,
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
                                 "home_phone": {
                                     "format": "phone",
                                     "type": [
@@ -442,7 +449,14 @@
                                         "null"
                                     ]
                                 },
-                                "name": {
+                                "last_name": {
+                                    "required": true,
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "middle_name": {
                                     "required": true,
                                     "type": [
                                         "string",
@@ -451,6 +465,10 @@
                                 },
                                 "person_id": {
                                     "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
+                                },
+                                "prefix_code": {
+                                    "required": true,
+                                    "type": "integer"
                                 },
                                 "relationship_code": {
                                     "required": true,
@@ -467,6 +485,10 @@
                                         "string",
                                         "null"
                                     ]
+                                },
+                                "suffix_code": {
+                                    "required": true,
+                                    "type": "integer"
                                 },
                                 "zip_code": {
                                     "type": [
