@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema#",
+    "additionalProperties": false,
+    "description": "NCS code list",
+    "properties": {
+        "mdes_specification_version": {
+            "description": "MDES version used by Cases (major.minor.patch1.patch2)",
+            "required": true,
+            "type": "string"
+        },
+        "mdes_version": {
+            "description": "MDES version used by Cases (major.minor)",
+            "required": true,
+            "type": "string"
+        },
+        "ncs_codes": {
+            "items": {
+                "additionalProperties": false,
+                "properties": {
+                    "display_text": {
+                        "description": "User-visible description of the code",
+                        "required": true,
+                        "type": "string"
+                    },
+                    "list_name": {
+                        "description": "The code list to which this code belongs",
+                        "required": true,
+                        "type": "string"
+                    },
+                    "local_code": {
+                        "description": "The code value; use this for populating i.e. fieldwork attributes",
+                        "required": true,
+                        "type": "integer"
+                    }
+                }
+            },
+            "minItems": 0,
+            "required": true,
+            "type": "array"
+        }
+    }
+}
