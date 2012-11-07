@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema#", 
+    "additionalProperties": false, 
+    "description": "Provider list", 
+    "properties": {
+        "providers": {
+            "items": {
+                "additionalProperties": false, 
+                "properties": {
+                    "location_num": {
+                        "required": true, 
+                        "type": "string"
+                    }, 
+                    "name": {
+                        "required": true, 
+                        "type": "string"
+                    }, 
+                    "practice_num": {
+                        "required": true, 
+                        "type": [
+                            "integer", 
+                            "null"
+                        ]
+                    }, 
+                    "recruited": {
+                        "required": true, 
+                        "type": "boolean"
+                    }
+                }
+            }, 
+            "minItems": 0, 
+            "required": true, 
+            "type": "array"
+        }
+    }
+}
