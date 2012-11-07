@@ -7,7 +7,7 @@
             "items": {
                 "additionalProperties": false,
                 "properties": {
-                    "location_num": {
+                    "location": {
                         "required": true,
                         "type": "string"
                     },
