@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema#",
+    "additionalProperties": false,
+    "description": "Schema for GET /api/v1/code_lists response body",
+    "extends": [
+        {
+            "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/disposition_codes_schema.json#"
+        },
+        {
+            "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/ncs_codes_schema.json#"
+        }
+    ]
+}
