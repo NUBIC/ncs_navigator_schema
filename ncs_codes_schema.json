@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-03/schema#",
-    "additionalProperties": false,
     "description": "NCS code list",
     "extends": {
         "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/mdes_versioned_schema.json#"
