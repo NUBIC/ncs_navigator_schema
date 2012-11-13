@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema#",
+    "additionalProperties": false,
+    "description": "MDES-versioned objects",
+    "properties": {
+        "mdes_specification_version": {
+            "description": "Applicable MDES version (major.minor.patch1.patch2)",
+            "required": true,
+            "type": "string"
+        },
+        "mdes_version": {
+            "description": "Applicable MDES version (major.minor)",
+            "required": true,
+            "type": "string"
+        }
+    }
+}

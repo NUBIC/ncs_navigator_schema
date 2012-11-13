@@ -1,29 +1,38 @@
 {
     "$schema": "http://json-schema.org/draft-03/schema#",
     "additionalProperties": false,
-    "description": "NCS code list",
+    "description": "MDES disposition code list",
     "extends": {
         "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/mdes_versioned_schema.json#"
     },
     "properties": {
-        "ncs_codes": {
+        "disposition_codes": {
             "items": {
                 "additionalProperties": false,
                 "properties": {
-                    "display_text": {
-                        "description": "User-visible description of the code",
-                        "required": true,
-                        "type": "string"
-                    },
-                    "list_name": {
-                        "description": "The code list to which this code belongs",
-                        "required": true,
-                        "type": "string"
-                    },
-                    "local_code": {
-                        "description": "The code value; use this for populating i.e. fieldwork attributes",
+                    "category_code": {
                         "required": true,
                         "type": "integer"
+                    },
+                    "disposition": {
+                        "required": true,
+                        "type": "string"
+                    },
+                    "final_category": {
+                        "required": true,
+                        "type": "string"
+                    },
+                    "final_code": {
+                        "required": true,
+                        "type": "string"
+                    },
+                    "interim_code": {
+                        "required": true,
+                        "type": "string"
+                    },
+                    "sub_category": {
+                        "required": true,
+                        "type": "string"
                     }
                 }
             },

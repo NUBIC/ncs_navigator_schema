@@ -9,6 +9,10 @@
             "fn": "entity_id_schema.json"
         },
         {
+            "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/mdes_versioned_schema.json#",
+            "fn": "mdes_versioned_schema.json"
+        },
+        {
             "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/response_set_schema.json#",
             "fn": "response_set_schema.json"
         },
