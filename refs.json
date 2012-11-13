@@ -5,8 +5,8 @@
             "fn": "decimal_as_string.json"
         },
         {
-            "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/disposition_codes.json#",
-            "fn": "disposition_codes.json"
+            "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/disposition_codes_schema.json#",
+            "fn": "disposition_codes_schema.json"
         },
         {
             "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#",
