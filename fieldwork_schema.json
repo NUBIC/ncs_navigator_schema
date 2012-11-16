@@ -359,6 +359,71 @@
             "required": true,
             "type": "array"
         },
+        "event_templates": {
+            "items": {
+                "properties": {
+                    "event_repeat_key": {
+                        "required": true,
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "event_type_code": {
+                        "required": true,
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "instruments": {
+                        "items": {
+                            "properties": {
+                                "instrument_plan_id": {
+                                    "required": true,
+                                    "type": "string"
+                                },
+                                "instrument_repeat_key": {
+                                    "required": true,
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ]
+                                },
+                                "instrument_type_code": {
+                                    "required": true,
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ]
+                                },
+                                "instrument_version": {
+                                    "required": true,
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "name": {
+                                    "required": true,
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "minItems": 0,
+                        "required": true,
+                        "type": "array"
+                    },
+                    "name": {
+                        "required": true,
+                        "type": "string"
+                    }
+                }
+            },
+            "minItems": 0,
+            "required": true,
+            "type": "array"
+        },
         "instrument_plans": {
             "items": {
                 "properties": {
