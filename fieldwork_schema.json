@@ -518,14 +518,12 @@
                                     ]
                                 },
                                 "last_name": {
-                                    "required": true,
                                     "type": [
                                         "string",
                                         "null"
                                     ]
                                 },
                                 "middle_name": {
-                                    "required": true,
                                     "type": [
                                         "string",
                                         "null"
@@ -535,7 +533,6 @@
                                     "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
                                 },
                                 "prefix_code": {
-                                    "required": true,
                                     "type": "integer"
                                 },
                                 "relationship_code": {
@@ -555,7 +552,6 @@
                                     ]
                                 },
                                 "suffix_code": {
-                                    "required": true,
                                     "type": "integer"
                                 },
                                 "zip_code": {
