@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema#",
+    "additionalProperties": false,
+    "description": "System status schema",
+    "properties": {
+        "db": {
+            "required": true,
+            "type": "boolean"
+        },
+        "failures": {
+            "description": "Failure messages produced by the checks",
+            "properties": {
+                "db": {
+                    "required": true,
+                    "type": "string"
+                },
+                "workers": {
+                    "required": true,
+                    "type": "string"
+                }
+            },
+            "required": true
+        },
+        "workers": {
+            "required": true,
+            "type": "boolean"
+        }
+    }
+}
