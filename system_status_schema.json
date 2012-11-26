@@ -12,11 +12,17 @@
             "properties": {
                 "db": {
                     "required": true,
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "workers": {
                     "required": true,
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 }
             },
             "required": true
