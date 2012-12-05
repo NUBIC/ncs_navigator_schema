@@ -12,6 +12,10 @@
             "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#",
             "required": true
         },
+        "person_id": {
+            "$ref": "http://download.nubic.northwestern.edu/surveyor/api_id_schema.json#",
+            "required": true
+        },
         "responses": {
             "description": "Responses in the response set",
             "items": {
