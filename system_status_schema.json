@@ -3,10 +3,6 @@
     "additionalProperties": false,
     "description": "System status schema",
     "properties": {
-        "cas": {
-            "required": true,
-            "type": "boolean"
-        },
         "db": {
             "required": true,
             "type": "boolean"
@@ -14,13 +10,6 @@
         "failures": {
             "description": "Failure messages produced by the checks",
             "properties": {
-                "cas": {
-                    "required": true,
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
                 "db": {
                     "required": true,
                     "type": [
