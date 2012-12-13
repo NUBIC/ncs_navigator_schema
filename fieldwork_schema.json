@@ -405,6 +405,37 @@
                     "name": {
                         "required": true,
                         "type": "string"
+                    },
+                    "response_templates": {
+                        "description": "Prepopulated responses for surveys involved with this event",
+                        "items": {
+                            "properties": {
+                                "aref": {
+                                    "description": "Reference identifier of an answer in the given survey",
+                                    "required": true,
+                                    "type": "string"
+                                },
+                                "qref": {
+                                    "description": "Reference identifier of a question in the given survey",
+                                    "required": true,
+                                    "type": "string"
+                                },
+                                "survey_id": {
+                                    "$ref": "http://download.nubic.northwestern.edu/surveyor/api_id_schema.json#"
+                                },
+                                "value": {
+                                    "required": true,
+                                    "type": [
+                                        "string",
+                                        "number",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        },
+                        "minItems": 0,
+                        "required": true,
+                        "type": "array"
                     }
                 }
             },
