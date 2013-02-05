@@ -14,7 +14,8 @@ if (!data) {
   process.exit(1);
 }
 
-refs = JSON.parse(data);
+refs = JSON.parse(data)['refs'];
+console.log('Loading', refs.length, 'referenced schemas');
 
 for (i = 0; i < refs.length; ++i) {
   ref = refs[i]['$ref'];
