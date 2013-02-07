@@ -5,7 +5,7 @@ require 'pp'
 schema_dir = File.expand_path('../..', __FILE__)
 schema_fns = Dir["#{schema_dir}/*schema.json"]
 
-refs = File.read(File.expand_path('../refs.json', __FILE__))
+refs = File.read(File.expand_path('../../refs.json', __FILE__))
 draft03 = File.read(File.expand_path('../../vendor/json-schema/draft-03/schema', __FILE__))
 
 ctx = JSV::Context.new
