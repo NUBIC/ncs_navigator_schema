@@ -1,0 +1,14 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    execjs (1.4.0)
+      multi_json (~> 1.0)
+    jsv.rb (0.0.1.pre)
+      execjs
+    multi_json (1.5.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  jsv.rb

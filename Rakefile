@@ -9,9 +9,5 @@ end
 
 desc "Validate schemata against draft 03"
 task :validate do
-  schemata = Dir['*_schema.json']
-
-  schemata.each do |schema|
-    sh "cat #{schema} | node validate.js vendor/JSV/schemas/json-schema-draft-03/schema.json"
-  end
+  sh "ruby util/validate.rb"
 end
