@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-03/schema#",
-    "additionalProperties": false,
     "description": "MDES-versioned objects",
     "properties": {
         "mdes_specification_version": {
