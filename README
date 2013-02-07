@@ -1,15 +1,5 @@
-This repository includes a JSON Schema document and validation tools for
-checking JSON sent between NCS Navigator Field[0] and NCS Navigator Core[1].
-
-The validate.js program in this repo can be used to validate a JSON document 
-against a schema, and should be usable in any CommonJS environment.  (However,
-so far, only NodeJS has been tested.)  To use, pass the JSON document on
-standard input and supply the schema to use as validate.js' first argument:
-
-    curl https://ncs.example.edu/fieldwork/1 \
-        | node validate.js fieldwork_schema.json
-
+This repository contains JSON Schema Draft 03 documents that describe JSON sent
+between NCS Navigator Field[0] and NCS Navigator Cases[1].
 
 [0]: https://github.com/NUBIC/ncs_navigator_field
 [1]: https://github.com/NUBIC/ncs_navigator_core
-
