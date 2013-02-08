@@ -7,10 +7,21 @@
             "required": true,
             "type": "boolean"
         },
+        "event_type_order": {
+            "required": true,
+            "type": "boolean"
+        },
         "failures": {
             "description": "Failure messages produced by the checks",
             "properties": {
                 "db": {
+                    "required": true,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "event_type_order": {
                     "required": true,
                     "type": [
                         "string",
