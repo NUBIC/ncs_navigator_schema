@@ -3,7 +3,7 @@ GEM
   specs:
     execjs (1.4.0)
       multi_json (~> 1.0)
-    jsv.rb (0.0.1.pre)
+    jsv.rb (0.0.1.pre2)
       execjs
     multi_json (1.5.0)
 
