@@ -25,6 +25,14 @@
                     "recruited": {
                         "required": true,
                         "type": "boolean"
+                    },
+                    "address_one": {
+                        "required": true,
+                        "type": "string"
+                    },
+                    "unit": {
+                        "required": true,
+                        "type": "string"
                     }
                 }
             },
