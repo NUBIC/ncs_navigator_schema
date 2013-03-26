@@ -1,0 +1,7 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema#",
+    "description": "Public IDs for NCS Navigator Cases' participants",
+    "format": "[a-z0-9]{3}-[a-z0-9]{2}-[a-z0-9]{4}",
+    "required": true,
+    "type": "string"
+}

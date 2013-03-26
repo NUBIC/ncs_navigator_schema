@@ -21,6 +21,10 @@
             "fn": "ncs_codes_schema.json"
         },
         {
+            "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/p_id_schema.json#",
+            "fn": "p_id_schema.json"
+        },
+        {
             "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/response_set_schema.json#",
             "fn": "response_set_schema.json"
         },

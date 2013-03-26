@@ -1,0 +1,80 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema#",
+    "description": "Cases' event retrieval API",
+    "properties": {
+        "additionalProperties": false,
+        "data_collectors": {
+            "items": {
+                "properties": {
+                    "links": {
+                        "minItems": 0,
+                        "required": true,
+                        "type": "array"
+                    },
+                    "name": {
+                        "required": true,
+                        "type": "string"
+                    },
+                    "username": {
+                        "required": true,
+                        "type": "string"
+                    }
+                }
+            },
+            "minItems": 0,
+            "required": true,
+            "type": "array"
+        },
+        "events": {
+            "items": {
+                "additionalProperties": false,
+                "properties": {
+                    "data_collector_usernames": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "minItems": 0,
+                        "required": true,
+                        "type": "array"
+                    },
+                    "event_id": {
+                        "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/entity_id_schema.json#"
+                    },
+                    "event_type": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "display_text": {
+                                "required": true,
+                                "type": "string"
+                            },
+                            "local_code": {
+                                "required": true,
+                                "type": "integer"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "links": {
+                        "minItems": 0,
+                        "required": true,
+                        "type": "array"
+                    },
+                    "participant_id": {
+                        "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/p_id_schema.json#"
+                    },
+                    "scheduled_date": {
+                        "format": "date",
+                        "required": true,
+                        "type": "string"
+                    }
+                }
+            },
+            "minItems": 0,
+            "required": true,
+            "type": "array"
+        },
+        "filters": {
+            "type": "object"
+        }
+    }
+}
