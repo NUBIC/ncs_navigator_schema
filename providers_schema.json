@@ -31,7 +31,6 @@
                         "type": "string"
                     },
                     "unit": {
-                        "required": true,
                         "type": "string"
                     }
                 }
