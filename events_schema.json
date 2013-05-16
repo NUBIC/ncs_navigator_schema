@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-03/schema#",
+    "additionalProperties": false,
     "description": "Cases' event retrieval API",
     "properties": {
-        "additionalProperties": false,
         "data_collectors": {
             "items": {
                 "properties": {
