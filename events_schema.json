@@ -73,8 +73,22 @@
                         "required": true,
                         "type": "array"
                     },
+                    "participant_first_name": {
+                        "required": true,
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
                     "participant_id": {
                         "$ref": "http://download.nubic.northwestern.edu/ncs_navigator/p_id_schema.json#"
+                    },
+                    "participant_last_name": {
+                        "required": true,
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     },
                     "scheduled_date": {
                         "format": "date",
